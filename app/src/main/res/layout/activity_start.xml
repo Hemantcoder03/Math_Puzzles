@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:src="@drawable/math_riddles_app_icon_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/play_btn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:iconTint="@color/white"
+        android:text="play"
+        android:textAppearance="@style/startPageTextApperarance"
+        android:textColor="@color/white"
+        app:cornerRadius="@dimen/_7sdp"
+        app:icon="@drawable/play_btn"
+        app:iconGravity="start"
+        app:layout_constraintBottom_toTopOf="@+id/levels_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/levels_btn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/levels_btn"
+        app:iconTint="@color/white"
+        app:iconGravity="start"
+        android:text="levels"
+        android:textAppearance="@style/startPageTextApperarance"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:cornerRadius="@dimen/_7sdp"
+        app:layout_constraintBottom_toTopOf="@+id/settings_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings_btn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/settings_btn"
+        app:iconTint="@color/white"
+        app:iconGravity="start"
+        android:text="settings"
+        android:textAppearance="@style/startPageTextApperarance"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:cornerRadius="@dimen/_7sdp"
+        app:layout_constraintBottom_toTopOf="@+id/exit_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/exit_btn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/exit_btn"
+        app:iconTint="@color/white"
+        app:iconGravity="start"
+        android:text="exit"
+        android:textAppearance="@style/startPageTextApperarance"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/_90sdp"
+        app:cornerRadius="@dimen/_7sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
